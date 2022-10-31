@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #191b1f;
+  position: relative;
+  user-select: none;
+}
+
+.circle1 {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #cc00ff, #4fabef);
+  transform: translateX(-250px) translateY(-150px);
+}
+.circle2 {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fc8d62, #ac0baa);
+  transform: translateX(250px) translateY(150px);
+}
+.card {
+  width: 500px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 2.5rem;
+  font-family: "Poppins";
+  color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.first {
+  display: flex;
+  justify-content: space-between;
+}
+.chip {
+  height: 2.5rem;
+  background-image: url("./logo.png");
+  opacity: 0.3;
+}
+.name {
+  font-size: x-large;
+  font-weight: 600;
+}
+.second {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.number {
+  display: block;
+  width: max-content;
+  margin: auto;
+  font-size: xx-large;
+  letter-spacing: 0.25rem;
+  word-spacing: 0.5rem;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  font-size: larger;
+}
